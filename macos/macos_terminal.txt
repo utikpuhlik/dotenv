@@ -1,0 +1,85 @@
+### Mac terminal customization ###
+0. install iTerm2 + dracula theme
+1. install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+1.1 install 'hack' font using Homebrew
+# Install with brew
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font
+
+2. install starship
+https://starship.rs/guide/#%F0%9F%9A%80-installation
+# Install with brew
+brew install starship
+
+# Make config toml
+https://starship.rs/config/#prompt
+mkdir -p ~/.config && touch ~/.config/starship.toml
+
+3. install plugins:
+# download syntax highlighting extension
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+# install autocompletions extension
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+# download the plugin then update your ~/.zshrc file
+git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
+
+BAT - https://www.cyberciti.biz/open-source/bat-linux-command-a-cat-clone-with-written-in-rust/
+(sudo apt install bat)
+# install bat from Homebrew
+brew install bat
+
+EXA - https://github.com/ogham/exa (brew install exa)
+
+Z - https://github.com/agkozak/zsh-z
+
+4. Set alias and add plugins to .zshrc
+
+plugins=(
+	git
+	zsh-syntax-highlighting
+    zsh-autosuggestions
+	zsh-z
+)
+
+# map exa commands to normal ls commands
+alias la="exa -la --icons"
+alias ls="exa --icons"
+alias lt="exa --tree --icons -a -I '.git|__pycache__|.mypy_cache|.ipynb_checkpoints'"
+
+# Starship
+eval "$(starship init zsh)"
+
+5. Setup DevTools (Poetry, GO, Rust)
+
+* Poetry - https://python-poetry.org/docs/
+(curl -sSL https://install.python-poetry.org | python3 -)
+Add to PATH: Command will appeared after successfull installing of Poetry
+export PATH="/home/utikpuhlik/.local/bin:$PATH"
+
+* Go (?)
+### My Version ###
+Add into .zshrc:
+## Macos:
+export PATH=$PATH:$(go env GOPATH)/bin
+## Ubuntu
+export GOROOT=/usr/local/go
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$(go env GOPATH)/bin
+
+* Rust (?)
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+source "$HOME/.cargo/env"
+rustc --version
+
+
+MAIN LINKS:
+https://engineeringfordatascience.com/posts/configure_terminal_for_data_science_with_oh_my_zsh/
+https://starship.rs/guide/#%F0%9F%9A%80-installation
+https://www.digitalocean.com/community/tutorials/how-to-install-go-on-ubuntu-20-04
+https://go.dev/doc/install
+https://github.com/sharkdp/bat
+https://www.youtube.com/watch?v=49pec7Mm7OE
