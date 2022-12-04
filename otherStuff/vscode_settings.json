@@ -1,0 +1,38 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.fontSize": 17.5,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "editor.wordWrap": "on",
+    "files.trimTrailingWhitespace": true,
+    "editor.mouseWheelZoom": true,
+    "files.autoSave": "afterDelay",
+    "workbench.iconTheme": "material-icon-theme",
+    "python.defaultInterpreterPath": "C:\\Users\\Vadik\\anaconda3\\envs\\tg\\python.exe",
+    "workbench.colorCustomizations": {
+        "[Tokyo Night]": { // or "[Tokyo Night Storm]"
+            "editor.background": "#24283b",
+             // Preferred hex color
+        }
+    },
+    "terminal.integrated.fontSize": 15,
+    "debug.console.fontSize": 15,
+    "scm.inputFontSize": 15,
+    "terminal.integrated.inheritEnv": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "jupyter.jupyterServerType": "local",
+    "workbench.colorTheme": "Dracula",
+    "window.zoomLevel": 1,
+    "gitlens.codeLens.enabled": false,
+    "editor.largeFileOptimizations": false,
+    "git.autofetch": true,
+    "terminal.external.windowsExec": "C:\\Program Files\\Git\\git-bash.exe",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "editor.fontFamily": "Hack Nerd Font Mono, Consolas, 'Courier New', monospace"
+}
