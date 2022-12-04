@@ -1,0 +1,38 @@
+### Terminal ###
+1. Download vscode and login to sync 
+2. Download gitbash and setup default editor
+3. Install chocolately
+4. Install starship with chocolately
+5. Create ~/.config folder and copy starship.toml to it
+6. Setup NERD FONTS (Hack): Download Hack font folder and install one by one
+6.1 Control panel -> features -> enable the VirtualMachine..; Download linux subsystem (WSL) + Ubuntu 22.04
+6.2 Download and Install Docker
+6.3 Reload a PC
+7. Open windows terminal and change setting.json to yours
+7.1 Don't forget about .bash_profile or .bashrc file in home directory!
+7.2 Setup ubuntu user -> go to WSL guide to run scripts and customize your prompt 
+
+
+### Python && Poetry ###
+https://python-poetry.org/docs/
+Links:
+location - C:\Users\Vadik\AppData\Roaming\Python\Scripts
+envs location - C:\Users\Vadik\AppData\Local\pypoetry\Cache\virtualenvs
+python location - C:\Program Files\Python310
+
+1. Install Python (official), add to PATH + Install for all users -> destanation C:\Program Files\Python310
+1.1 Restart PC or check with command python -V in powershell
+1.2 Add to .bash_profile (export PATH=$PATH:/c/Program\ Files/Python310)
+2. In powershell run: (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
+2.1 Add enviroment variable with GUI: search -> system enviroment variables, add to PATH powershell's output (C:\Users\Vadik\AppData\Roaming\Python\Scripts), restart PC
+? https://www.jetbrains.com/help/pycharm/poetry.html#d1fa6081, https://www.jetbrains.com/help/pycharm/using-wsl-as-a-remote-interpreter.html#configure-wsl
+? $Env:Path += ";C:\Users\jetbrains\AppData\Roaming\Python\Scripts"; setx PATH "$Env:Path"
+2.2 Save PATH in PS and check wether poetry is here $env:path >> a.out 
+2.3 Check with "poetry" command
+3. Add to .bash_profile: (export PATH=$PATH:$HOME/AppData/Roaming/Python/Scripts)
+
+4. Download PyCharm, Datagrip..
+4.1 Download plugins: .csv, atom one dark, atom material icons, change font of editor to 17 and IDE's font to 14.5
+https://www.jetbrains.com/help/pycharm/poetry.html#d1fa6081, https://www.jetbrains.com/help/pycharm/using-wsl-as-a-remote-interpreter.html#configure-wsl
+### Python && Poetry ###
+

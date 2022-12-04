@@ -1,0 +1,92 @@
+# format = "$all"
+
+# Use custom format
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$git_metrics\
+$rust\
+$python\
+$conda\
+$golang\
+$java\
+$fill\
+$cmd_duration\
+$jobs $time\
+$line_break\
+$character"""
+
+
+[character]
+success_symbol = "[❯](green)"
+error_symbol = "[❯](red)"
+
+[fill]
+symbol = " "
+
+[cmd_duration]
+disabled = false
+format = "[$duration]($style)"
+style = "yellow"
+
+[time]
+disabled = false
+style = "bold white"
+format = " [$time]($style)"
+
+[jobs]
+symbol = ""
+style = "bold red"
+number_threshold = 1
+format = "[$symbol]($style)"
+
+[python]
+format = 'via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+
+[aws]
+symbol = "  "
+
+[c]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[directory]
+read_only = " "
+truncation_length = 4
+truncate_to_repo = false
+
+[docker_context]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+# [golang]
+# symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[package]
+symbol = " "
+
+[ruby]
+symbol = " "
+
+# [rust]
+# symbol = " "
+
+
+
