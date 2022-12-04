@@ -94,9 +94,6 @@ alias la="exa -la --icons"
 alias ls="exa --icons"
 alias lt="exa --tree --icons -a -I '.git|__pycache__|.mypy_cache|.ipynb_checkpoints'"
 
-# polina_dev (Quick connect to Polina's Hetzner Server)
-alias polina_dev="ssh -i ~/.ssh/hetzner_macos.pem root@95.217.1.117"
-
 # Move to trash instead of hard delete (Installing with homebrew)
 alias rm=trash
 
