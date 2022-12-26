@@ -1,9 +1,10 @@
 ### Mac terminal customization ###
-0. install iTerm2 + dracula theme
-1. install oh-my-zsh
+0. Install Homebrew!!!
+1. install iTerm2 + dracula theme
+1.1. install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-1.1 install 'hack' font using Homebrew
+1.2 install 'hack' font using Homebrew
 # Install with brew
 brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
@@ -55,7 +56,13 @@ alias lt="exa --tree --icons -a -I '.git|__pycache__|.mypy_cache|.ipynb_checkpoi
 # Starship
 eval "$(starship init zsh)"
 
-5. Setup DevTools (Poetry, GO, Rust)
+5. Setup Nano
+brew install nano
+touch ~/.nanorc
+copy paste nanorc file from this directory
+# mkdir ~/.nano - ?
+
+6. Setup DevTools (Poetry, GO, Rust)
 
 * Poetry - https://python-poetry.org/docs/
 (curl -sSL https://install.python-poetry.org | python3 -)
