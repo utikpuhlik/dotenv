@@ -1,31 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-# __conda_setup="$('/opt/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-# if [ $? -eq 0 ]; then
-#    eval "$__conda_setup"
-# else
-#     if [ -f "/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-#         . "/opt/anaconda3/etc/profile.d/conda.sh"
-#     else
-#         export PATH="/opt/anaconda3/bin:$PATH"
-#     fi
-# fi
-# unset __conda_setup
-# <<< conda initialize <<<
-
 # <<< mysql <<<
 export PATH=${PATH}:/usr/local/mysql/bin/
 # >>> mysql >>>
-
-# >>> homebrew >>>
-export PATH="/opt/homebrew/bin:$PATH"
-# <<< homebrew <<<
-
-# Go PATH
-export PATH=$PATH:$(go env GOPATH)/bin
 
 # Helper (fix typo in commands)
 eval $(thefuck --alias)
