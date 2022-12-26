@@ -31,7 +31,9 @@ BAT - https://www.cyberciti.biz/open-source/bat-linux-command-a-cat-clone-with-w
 (sudo apt install bat)
 # install bat from Homebrew
 brew install bat
-
+# change color
+bat --generate-config-file
+change theme to Monokai Extended or enter bat --list-themes to choose
 EXA - https://github.com/ogham/exa (brew install exa)
 
 Z - https://github.com/agkozak/zsh-z
