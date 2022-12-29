@@ -17,6 +17,7 @@ export PATH=$PATH:$HOME/sdk/go1.18.4/bin
 # Aliases
 # git
 alias gs="git status"
+alias gl="git log --oneline --decorate"
 
 # https://stackoverflow.com/questions/60580332/poetry-virtual-environment-already-activated
 

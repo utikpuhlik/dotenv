@@ -66,6 +66,7 @@ alias python=python3
 
 # git
 alias gs="git status"
+alias gl="git log --oneline --decorate"
 
 # map exa commands to normal ls commands
 alias la="exa -la --icons"
