@@ -14,11 +14,11 @@ export PATH=$PATH:$HOME/sdk/go1.18.4/bin
 # https://stackoverflow.com/questions/36869660/git-shell-go-command-not-found
 # <<< Golang PATH <<<
 
-# >>> alias for poetry >>>
-# WIP // alias acpoet="source $(poetry env info --path)/Scripts/activate" // WIP
+# Aliases
+# git
+alias gs="git status"
+
 # https://stackoverflow.com/questions/60580332/poetry-virtual-environment-already-activated
-# To activate poetry shell -> invoke: source $(poetry env info --path)/Scripts/activate
-# <<< alias for poetry <<<
 
 # >>> conda initialize >>>
 # Fix encoding error:
@@ -28,7 +28,4 @@ export PYTHONIOENCODING=utf8
 # !! Contents within this block are managed by 'conda init' !!
 # eval "$('/c/Users/Vadik/anaconda3/Scripts/conda.exe' 'shell.bash' 'hook')"
 # <<< conda initialize <<<
-
-
-
 
