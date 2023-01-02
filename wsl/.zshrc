@@ -103,6 +103,7 @@ source $ZSH/oh-my-zsh.sh
 #
 # Aliases
 alias zshconfig="nano ~/.zshrc"
+alias dotenv="code ~/dotenv"
 
 # python
 alias python=python3

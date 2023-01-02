@@ -59,6 +59,7 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias zshconfig="nano ~/.zshrc"
+alias dotenv="code ~/dotenv"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # python

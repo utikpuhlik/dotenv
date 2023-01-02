@@ -22,6 +22,9 @@ export PATH=$PATH:$HOME/sdk/go1.18.4/bin
 alias gs="git status"
 alias gl="git log --oneline --decorate"
 
+# open dotenv
+alias dotenv="code ~/dotenv"
+
 # <<< Aliases <<<
 
 
