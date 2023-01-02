@@ -1,3 +1,6 @@
+# History
+PROMPT_COMMAND='history -a'
+
 # >>> starship initialize >>>
 eval "$(starship init bash)"
 # <<< starship initialize <<<
