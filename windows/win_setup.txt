@@ -1,6 +1,7 @@
 ### Terminal ###
-1. Download vscode and login to sync 
-2. Download gitbash and setup default editor
+1. Download vscode and login to sync
+2. Download gitbash and setup default editor (git config --global core.editor "code --wait")
+2.1 How to config git - https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git
 3. Install chocolately
 4. Install starship with chocolately
 5. Create ~/.config folder and copy starship.toml to it
@@ -10,7 +11,7 @@
 6.3 Reload a PC
 7. Open windows terminal and change setting.json to yours
 7.1 Don't forget about .bash_profile or .bashrc file in home directory!
-7.2 Setup ubuntu user -> go to WSL guide to run scripts and customize your prompt 
+7.2 Setup ubuntu user -> go to WSL guide to run scripts and customize your prompt
 
 
 ### Python && Poetry ###
@@ -27,7 +28,7 @@ python location - C:\Program Files\Python310
 2.1 Add enviroment variable with GUI: search -> system enviroment variables, add to PATH powershell's output (C:\Users\Vadik\AppData\Roaming\Python\Scripts), restart PC
 ? https://www.jetbrains.com/help/pycharm/poetry.html#d1fa6081, https://www.jetbrains.com/help/pycharm/using-wsl-as-a-remote-interpreter.html#configure-wsl
 ? $Env:Path += ";C:\Users\jetbrains\AppData\Roaming\Python\Scripts"; setx PATH "$Env:Path"
-2.2 Save PATH in PS and check wether poetry is here $env:path >> a.out 
+2.2 Save PATH in PS and check wether poetry is here $env:path >> a.out
 2.3 Check with "poetry" command
 3. Add to .bash_profile: (export PATH=$PATH:$HOME/AppData/Roaming/Python/Scripts)
 

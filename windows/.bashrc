@@ -17,12 +17,13 @@ export PATH=$PATH:$HOME/sdk/go1.18.4/bin
 # https://stackoverflow.com/questions/36869660/git-shell-go-command-not-found
 # <<< Golang PATH <<<
 
-# Aliases
-# git
+# >>> Aliases >>>
+# git aliases
 alias gs="git status"
 alias gl="git log --oneline --decorate"
 
-# https://stackoverflow.com/questions/60580332/poetry-virtual-environment-already-activated
+# <<< Aliases <<<
+
 
 # >>> conda initialize >>>
 # Fix encoding error:
